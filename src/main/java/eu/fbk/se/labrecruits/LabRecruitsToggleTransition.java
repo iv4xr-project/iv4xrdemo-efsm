@@ -47,8 +47,8 @@ public class LabRecruitsToggleTransition extends Transition<LabRecruitsState, St
 	protected Set<String> operation(String input, LabRecruitsContext context) {
 	    // iterate over doors in text context
 		for(LabRecruitsDoor door : context.values()) {
-			 if (door.getButtons().contains(this.getSrc().getDoorId())) { 
-				 door.getStatus();
+			 if (door.getButtons().contains(this.getSrc().getId())) { 
+				 door.updateStatus();
 				 context.put(door.getId(), door);
 		     }
 		}		  

@@ -25,7 +25,7 @@ public class LabRecruitsState implements Comparable<LabRecruitsState>{
 	
 	public LabRecruitsState(String id, String doorId) {
 		this.id = id;
-		this.hasDoor = false;
+		this.hasDoor = true;
 		this.doorId = doorId;
 	}
 	

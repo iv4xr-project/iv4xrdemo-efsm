@@ -27,6 +27,12 @@
 			<artifactId>EFSM4J</artifactId>
 			<version>master-SNAPSHOT</version>
 		</dependency>
+		<!--  iv4xr demo -->
+		<dependency>
+			<groupId>com.github.iv4xr-project</groupId>
+			<artifactId>iv4xrDemo</artifactId>
+			<version>master-SNAPSHOT</version>
+		</dependency>		
 		<!-- testing -->
 		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
 		<dependency>
