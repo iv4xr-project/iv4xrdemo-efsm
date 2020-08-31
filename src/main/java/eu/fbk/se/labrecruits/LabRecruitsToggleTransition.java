@@ -32,7 +32,7 @@ public class LabRecruitsToggleTransition extends Transition<LabRecruitsState, St
 
 	@Override
 	protected boolean inputGuard(String input) {
-		if (input == "" && this.getSrc().equals(this.getTgt())  ) {
+		if (input.equals("") && this.getSrc().equals(this.getTgt())  ) {
 			return true;
 		}
 		return false;

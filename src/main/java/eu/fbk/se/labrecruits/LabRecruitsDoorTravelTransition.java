@@ -20,7 +20,7 @@ public class LabRecruitsDoorTravelTransition  extends Transition<LabRecruitsStat
 
 	@Override
 	protected boolean inputGuard(String input) {
-		if (this.getTgt().getId() == input) {
+		if (this.getTgt().getId().equals(input)) {
 			return true;
 		}else {
 			return false;
