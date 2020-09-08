@@ -63,5 +63,15 @@ public class LabRecruitsState implements Comparable<LabRecruitsState>{
 		}
 		return getId().compareTo(o.getId()) ;
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof LabRecruitsState) {
+			LabRecruitsState other = (LabRecruitsState)obj;
+			return (compareTo(other) == 0);
+		}else {
+			return false;
+		}
+	}
 	
 }
